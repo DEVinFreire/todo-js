@@ -171,7 +171,7 @@ header input {
   padding-left: 8px;
   border-radius: 8px;
   border: 2px solid #efefef;
-  color: #efefef;
+  color: #121212;
   font-size: 18px;
   transition-duration: 0.3s;
 }
@@ -179,7 +179,7 @@ header input {
 .modal form input:focus,
 .modal form textarea:focus {
   border-color: #6d0707;
-  color: #efefef;
+  color: #121212;
 }
 
 .modal form textarea {

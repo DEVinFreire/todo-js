@@ -12,7 +12,7 @@
     </header>
     <main>
       <section id="tarefas">
-        <h2>Tarefas <button onClick="novaTarefa()">Nova tarefa</button></h2>
+        <h2>Tarefas <button onClick="abrirModal()">Nova tarefa</button></h2>
         <!-- <h6>Nenhuma tarefa encontrada</h6> -->
         <ul id="lista">
             
@@ -20,13 +20,13 @@
     </section>
       <section id="overlay" onClick="fecharModal()"></section>
       <div id="criarTarefa" class="modal">
-        <form>
+        <form onSubmit="adicionarTarefa()">
           <h3>Criar Tarefa <box-icon name='x' size='md' onClick="fecharModal()"></box-icon></h3>
           <label for="titulo">Titulo</label>
-          <input type="text" id="titulo" />
+          <input type="text" id="titulo" required />
           <label for="descricao">Descrição</label>
-          <textarea name="" id="descricao"></textarea>
-          <button>Criar</button>
+          <textarea name="" id="descricao" required></textarea>
+          <button type="submit">Criar</button>
         </form>
       </div>
     </main>
