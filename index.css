@@ -66,6 +66,19 @@ header input {
   top: 0;
   left: 0;
   z-index: 1;
+  visibility: hidden;
+  opacity: 0;
+  transition-duration: 0.3s;
+}
+
+#overlay.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal.active {
+  visibility: visible;
+  opacity: 1;
 }
 
 .modal {
@@ -79,12 +92,29 @@ header input {
   z-index: 2;
   transform: translate(-50%, -50%);
   border-radius: 8px;
+  visibility: hidden;
+  opacity: 0;
+  transition-duration: 0.3s;
 }
+
 .modal form h3 {
   font-size: 24px;
   text-align: center;
   color: #996;
   margin-bottom: 26px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal form h3 box-icon {
+  fill: #996;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+.modal form h3 box-icon:hover {
+  fill: #6d0707;
 }
 
 .modal form label {
