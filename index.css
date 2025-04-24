@@ -9,6 +9,10 @@
   list-style: none;
 }
 
+body {
+  background: #efefef;
+}
+
 header {
   background: #121212;
   padding: 16px 120px;
@@ -25,6 +29,39 @@ header input {
 
 #tarefas {
   padding: 60px 120px;
+}
+
+#tarefas ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+#tarefas ul li {
+  width: calc(25% - 12px);
+  padding: 16px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px #00000015;
+}
+
+#tarefas ul li h5 {
+  font-size: 16px;
+  color: #996;
+  margin-bottom: 16px;
+}
+#tarefas ul li .actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
+  cursor: pointer;
+  fill: #996;
+  transition-duration: 0.3s;
+}
+
+#tarefas ul li .actions box-icon:hover {
+  fill: #6d0707;
 }
 
 #tarefas h2 {
@@ -133,8 +170,8 @@ header input {
   margin-bottom: 16px;
   padding-left: 8px;
   border-radius: 8px;
-  border: 2px solid #433838;
-  color: #433838;
+  border: 2px solid #efefef;
+  color: #efefef;
   font-size: 18px;
   transition-duration: 0.3s;
 }
@@ -142,7 +179,7 @@ header input {
 .modal form input:focus,
 .modal form textarea:focus {
   border-color: #6d0707;
-  color: #433838;
+  color: #efefef;
 }
 
 .modal form textarea {
@@ -157,7 +194,7 @@ header input {
   color: #fff;
   font-size: 18px;
   border: none;
-border-radius: 8px;
+  border-radius: 8px;
   padding: 0px 16px;
   cursor: pointer;
   font-weight: bold;
